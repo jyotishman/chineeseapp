@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `Chineese App`,
+    description: `Chineese app is all about listing down  all the apps that are made in china. Currently it is showing all the 59 apps that are banned by Indian Goverment.`,
     author: `@gatsbyjs`,
   },
   plugins: [
@@ -27,8 +27,11 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-171155197-1",
+      },
+    },
   ],
 }
