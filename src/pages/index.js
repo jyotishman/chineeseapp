@@ -7,8 +7,9 @@ import "./styles.css"
 
 const IndexPage = () => {
   useEffect(() => {
-    alert("inside")
-    window.postMessage("Sending data from WebView")
+    setTimeout(function () {
+      window.ReactNativeWebView.postMessage("Hello!")
+    }, 2000)
   }, [])
   return (
     <Layout className="index">
