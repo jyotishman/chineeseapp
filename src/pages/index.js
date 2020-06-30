@@ -7,6 +7,7 @@ import "./styles.css"
 
 const IndexPage = () => {
   useEffect(() => {
+    alert("inside")
     window.postMessage("Sending data from WebView")
   }, [])
   return (
