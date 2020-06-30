@@ -8,7 +8,7 @@ import "./styles.css"
 const IndexPage = () => {
   useEffect(() => {
     setTimeout(function () {
-      window.ReactNativeWebView.postMessage("Hello!")
+      window.ReactNativeWebView.postMessage("List of Chineese app ban by Indian Goverment.!")
     }, 2000)
   }, [])
   return (
